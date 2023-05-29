@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d8d2cd;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: transparent;
+  z-index: 1000;
+}
+.forEng {
+  font-size: 35px; /* Default font size for small screens */
+  color: #000;
+  font-weight: bold;
+}
+
+.forJapanese {
+  font-size: 20px;
+  color: #000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.forImgForAll {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.forNine {
+  width: 57%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.forSix {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.forTwoImg1 {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.thirdImg1 {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.fourMain {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.fiveMain {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.sixImg {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.eightMain {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.tenMain {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.sevenMain {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.secondFiveMain {
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+}
+.sevenImg {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.nineMain {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.secondFourMain {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.sixMain {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.oneMain {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.footerDiv {
+  width: 100vw;
+  height: 800px;
+  background-color: #000;
+}
+
+.four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2px;
+}
+.two {
+  width: 300px;
+}
+.three {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.five {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.seven {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.forOneImg2 {
+  display: none;
+}
+.fourImg1 {
+  display: none;
+}
+.fiveImg1 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* Medium screens */
+  .forEng {
+    font-size: clamp(20px, 5vw + 30px, 70px);
+  }
+  .forOneImg2 {
+    display: block;
+  }
+  .fourImg1 {
+    display: block;
+  }
+  .fiveImg1 {
+    display: block;
+  }
+  .forJapanese {
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Large screens */
+  .forEng {
+    font-size: 100px;
+  }
+  .forOneImg2 {
+    display: block;
+  }
+  .fourImg1 {
+    display: block;
+  }
+  .fiveImg1 {
+    display: block;
+  }
+  .forJapanese {
+    font-size: 30px;
+    color: #000;
+  }
+}
